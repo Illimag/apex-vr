@@ -1,0 +1,27 @@
+<div id="navbar">
+  <img id="logo-blue" src="https://s3-us-west-1.amazonaws.com/apexvr/APEXLOGOBLUESHADOW.png"
+       [@animateLogoVisible]="bluelogo" (click)="navInit(home)"
+       (mouseenter)="toggleLogo()" (mouseleave)="toggleLogo()"/>
+  <img id="logo-white" src="https://s3-us-west-1.amazonaws.com/apexvr/APEX+LOGO+WHITE.png"
+       [@animateLogoVisible]="whitelogo"
+       (mouseenter)="toggleLogo()" (mouseleave)="toggleLogo()"/>
+  <nav>
+    <div *ngFor="let route of routes">
+      <div>
+        <h1 (click)="navInit(route)">{{route.name}}</h1>
+      </div>
+    </div>
+  </nav>
+</div>
+<div id="loading" [@animateNav]="loadstate">
+  <div></div>
+</div>
+<div id="VRlogo">
+  <div id="touch" (mouseenter)="toggleTouchInfo()" (mouseleave)="toggleTouchInfo()"></div>
+  <div id="touchinfo" [@animateVisible]="touchstate">
+    <p>Click and drag for 360 view.</p>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+

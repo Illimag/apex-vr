@@ -1,0 +1,16 @@
+<div class="page-section" id="difference">
+  <a-scene vr-mode-ui="enabled: false" embedded (renderstart)="loaded()">
+    <a-assets>
+      <img id="difference360" crossorigin="anonymous" src="https://s3-us-west-1.amazonaws.com/apexvr/1.+Apex+Difference+-+Desk.jpg">
+    </a-assets>
+    <a-sky crossorigin="anonymous" src="#difference360" rotation="0 -130 0"></a-sky>
+  </a-scene>
+  <div class="overlay">
+    <div class="banner">
+      <div id="title">
+        <h2>APEX DIFFERENCE</h2>
+      </div>
+      <p>{{differencetext}}</p>
+    </div>
+  </div>
+</div>

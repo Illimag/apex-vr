@@ -1,0 +1,275 @@
+:host {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 25;
+  pointer-events: none;
+}
+
+#nav-overlay {
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+
+  * {
+    
+    margin: 0px;
+    pointer-events: all;
+  }
+
+  #nav-bar {
+    height: 70px;
+    background-color: rgba(0, 35, 249, 0.42);
+    box-shadow: 0 25px 40px -20px ;
+    opacity:50%;
+
+    #icon {
+      height: 50px;
+      width: 50px;
+
+      i {
+        margin: auto 10px;
+        color: white;
+      }
+    }
+  }
+
+  #nav-links {
+    height: 100%;
+    height: calc(100% - 50px);
+    width:100%;
+    background-color: rgba(0, 35, 249, 0.92);
+    box-shadow: 10px 25px 40px -20px;
+    opacity:50%;
+    z-index: 5 !important;
+
+    div {
+      width: auto;
+      z-index: 5 !important;
+    }
+
+    div h1 {
+      padding: 25px;
+      color: white;
+      cursor: pointer;
+      z-index: 5 !important;
+    
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-btn {
+  display: block;
+  left: 10%;
+  margin: 1em;
+  position: absolute;
+  top: 5%;
+  width: 36px;
+  transform: translate(-50%, -50%);
+  &:before, &:after {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 4px;
+    transition: all 200ms ease-in-out;
+  }
+  &:before {
+    box-shadow: 0 10px 0 #fff;
+    margin-bottom: 16px;
+  }
+  &:hover {
+    &:before {
+      box-shadow: 0 0 0 #fff;
+      transform: translateY(10px) rotate(45deg);
+    }
+    &:after {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+
+
+
+#nav-overlay {
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+
+  * {
+    
+    margin: 0px;
+    pointer-events: all;
+  }
+
+  #nav-bar {
+    height: 70px;
+    background-color: rgba(0, 35, 249, 0.42);
+    box-shadow: 0 25px 40px -20px ;
+    opacity:50%;
+
+    #icon {
+      height: 50px;
+      width: 50px;
+
+      i {
+        margin: auto 10px;
+        color: white;
+      }
+    }
+  }
+
+  #nav-links {
+    height: 100%;
+    height: calc(100% - 50px);
+    width:25%;
+    background-color: rgba(0, 35, 249, 0.42);
+    box-shadow: 10px 25px 40px -20px;
+    opacity:50%;
+    z-index: 5 !important;
+
+    div {
+      width: auto;
+      z-index: 5 !important;
+    }
+
+    div h1 {
+      padding: 15px;
+      color: white;
+      cursor: pointer;
+      z-index: 5 !important;
+    }
+  }
+}
+
+
+
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+
+#nav-overlay {
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+
+  * {
+    
+    margin: 0px;
+    pointer-events: all;
+  }
+
+  #nav-bar {
+    height: 70px;
+    background-color: rgba(0, 35, 249, 0.42);
+    box-shadow: 0 25px 40px -20px ;
+    opacity:50%;
+
+    #icon {
+      height: 50px;
+      width: 50px;
+
+      i {
+        margin: auto 10px;
+        color: white;
+      }
+    }
+  }
+
+  #nav-links {
+    height: 100%;
+    height: calc(100% - 50px);
+    width:25%;
+    background-color: rgba(0, 35, 249, 0.42);
+    box-shadow: 10px 25px 40px -20px;
+    opacity:50%;
+    z-index: 5 !important;
+
+    div {
+      width: auto;
+      z-index: 5 !important;
+    }
+
+    div h1 {
+      padding: 15px;
+      color: white;
+      cursor: pointer;
+      z-index: 5 !important;
+    }
+  }
+}
+
+
+
+
+}

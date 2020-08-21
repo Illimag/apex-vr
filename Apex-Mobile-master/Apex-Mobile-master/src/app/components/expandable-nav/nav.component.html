@@ -1,0 +1,27 @@
+<div id="nav-overlay">
+    <div id="nav-bar">
+
+
+
+
+
+
+
+
+  <div class="menu-btn"  (click)="toggleNav()">
+  
+   
+  </div>
+
+
+
+
+
+
+    </div>
+    <nav id="nav-links" [@navToggle]="navstate" (@navToggle.done)="animateLinks()">
+      <div *ngFor="let route of routes">
+        <h1 [@animateLink]="route.state" (click)="navInit(route)">{{route.name}}</h1>
+      </div>
+    </nav>
+</div>

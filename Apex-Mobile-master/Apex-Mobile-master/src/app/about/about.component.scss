@@ -1,0 +1,80 @@
+.page-section {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: black;
+}
+
+.overlay {
+  position:fixed;
+  pointer-events: none;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+#about {
+  .overlay {
+    .banner {
+      position: fixed;
+      bottom: 0;
+      height: auto;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0, 35, 249, 0.5);
+
+      #togglebuttons {
+        height: 55px;
+
+        #title {
+          display: inline-block;
+          text-align: center;
+          height: 55px;
+          width: 70%;
+          border-bottom: 2px solid white;
+
+          h2 {
+            color: white;
+          }
+        }
+
+        i {
+          line-height: 50px;
+          color: white;
+        }
+
+        #abouttext {
+          pointer-events: all;
+          float: left;
+          width: 15%;
+          height: 55px;
+          text-align: center;
+        }
+
+        #aboutteam {
+          pointer-events: all;
+          float: right;
+          width: 15%;
+          height: 55px;
+          text-align: center;
+        }
+      }
+
+      #team {
+        text-align: center;
+      }
+
+      p {
+        vertical-align: middle;
+        color: white;
+        padding: 25px;
+        padding-top: 0px;
+      }
+
+      h3 {
+        color: white;
+      }
+    }
+  }
+}

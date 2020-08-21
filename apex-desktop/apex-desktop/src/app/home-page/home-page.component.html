@@ -1,0 +1,13 @@
+<div class="page-section" id="home">
+  <a-scene vr-mode-ui="enabled: false" embedded (renderstart)="loaded()" (enter-vr)="toggleContent()" (exit-vr)="toggleContent()">
+    <a-assets>
+      <video id="vid" preload="auto" autoplay crossorigin loop="true" src="https://s3-us-west-1.amazonaws.com/apex360vr/APEX+360+VR+DEMO+REEL_4096x2048_v03_10mbps.mp4"></video>
+    </a-assets>
+    <a-videosphere src="#vid"></a-videosphere>
+  </a-scene>
+  <div class="overlay">
+    <div id="home-title"></div>
+  </div>
+  
+  <div class="overlay"></div>
+</div>

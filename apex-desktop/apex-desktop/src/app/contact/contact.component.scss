@@ -1,0 +1,163 @@
+.page-section {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+#contact {
+  .overlay {
+
+    position:fixed;
+    pointer-events: none;
+    top: 100px;
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: rgba(0, 35, 150, 0.5);
+
+    #contact-banner {
+      box-shadow: none !important;
+    }
+
+    .banner {
+      margin: 100px;
+      margin-bottom: 0px;
+      text-align: center;
+
+      #form {
+        display: inline-block;
+        width: 40%;
+        height: 90%;
+        margin: 5%;
+        margin-top: 15px;
+
+        p {
+          vertical-align: middle;
+          color: white;
+          padding: 25px;
+          padding-top: 0px;
+        }
+      }
+
+      #info {
+        display: inline-block;
+        float: left;
+        width: 40%;
+        height: 90%;
+        margin: 5%;
+        margin-top: 15px;
+
+        * {
+          display: initial;
+          margin: 0;
+          padding: 0;
+        }
+
+        h3 {
+          padding-bottom: 25px;
+          display: block;
+        }
+
+        div {
+          display: block !important;
+          padding: 10px 0;
+          padding-bottom: 25px;
+          margin: 0;
+
+          div {
+            padding: 0;
+          }
+        }
+
+        #linked {
+          height: 50px;
+          padding-left: 10%;
+
+          button {
+            float: left;
+            pointer-events: all;
+            margin-right: 5px;
+            background-color: #0077B5;
+            color: white;
+
+            i {
+              -webkit-transition: all .2s ease-in-out;
+              transition: all .2s ease-in-out;
+            }
+
+            &:hover i {
+              color: rgb(0, 35, 249);
+            }
+
+            * {
+              display: inline-block;
+              margin: auto !important;
+              margin-left: 5px;
+              padding: 0;
+            }
+          }
+        }
+        #sociallinks {
+          padding-bottom: 50px;
+
+          button {
+
+            &:hover i {
+              color: #0077B5;
+            }
+
+            background-color: rgb(0, 35, 249);
+            margin: 5%;
+            pointer-events: all;
+            vertical-align: middle;
+            color: white;
+            padding: 0;
+
+            span {
+              margin: auto;
+            }
+
+          }
+
+          i {
+            line-height: 50px;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.title {
+  color: white;
+}
+
+.contactinfo {
+
+  height: 25px;
+  width: 80%;
+  margin: 0;
+  padding-left: 10% !important;
+  text-align: left;
+
+  p {
+    width: 90%;
+    color: white;
+  }
+
+  i {
+    padding-right: 5px !important;
+    color: rgb(0, 35, 249);
+    line-height: 18px;
+  }
+
+  p, i  {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+  }
+}

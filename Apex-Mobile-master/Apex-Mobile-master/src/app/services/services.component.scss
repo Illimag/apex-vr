@@ -1,0 +1,47 @@
+.page-section {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: black;
+}
+
+.overlay {
+  position:fixed;
+  pointer-events: none;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+#services {
+  .overlay {
+    align-items: center;
+    background-color: rgba(0, 35, 249, 0.5);
+
+    .banner {
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      color: white;
+      display: inline-block;
+      vertical-align: middle;
+      overflow: scroll;
+      pointer-events: all;
+
+      .serve {
+        height: 250px;
+        margin: 0;
+        padding: 0;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center center!important;
+
+        .info {
+          height: 100%;
+          background-color: rgba(0, 35, 249, 0.5);
+        }
+      }
+    }
+  }
+}

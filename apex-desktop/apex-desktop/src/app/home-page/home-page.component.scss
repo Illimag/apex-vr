@@ -1,0 +1,43 @@
+.page-section {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: black;
+}
+
+.overlay {
+  position:fixed;
+  pointer-events: none;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+#home {
+  .overlay {
+    #home-title {
+
+      height: 100%;
+      width: 100%;
+      background: url(https://image.ibb.co/eqw27a/logotest.png) no-repeat center center;
+      background-size: 80% auto;
+      
+    }
+  }
+}
+
+#home {
+  .overlay {
+    #finger {
+
+      height: 100%;
+      width: 100%;
+      background: url(https://image.ibb.co/eMr6JF/finger.png) no-repeat center center;
+      background-size: 25% auto;
+      padding-top:300px;
+    }
+  }
+}
+
+

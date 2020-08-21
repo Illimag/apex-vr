@@ -1,0 +1,41 @@
+:host {
+  color: white;
+  margin: 0;
+
+  button {
+    float: left;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    background-color: rgb(0, 35, 249);
+    pointer-events: all;
+  }
+
+  div {
+    width: 100%;
+  }
+
+  h3 {
+    margin-top: 10px;
+  }
+}
+
+input, label {
+  display: block;
+  margin-bottom: 3px;
+  padding: 2px;
+}
+
+label {
+  float: left;
+}
+
+input, textarea {
+  border: 2px inset white;
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 15px;
+  background-color: rgba(0,0,139, 0.5);
+  pointer-events: all;
+  font-size: 16px;
+  color: white;
+}
